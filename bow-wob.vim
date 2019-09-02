@@ -151,16 +151,16 @@ else
   call s:h('SpellRare',   {'cterm': s:sp_un, 'fg': s:fg})
   call s:h('SpellLocal',  {'cterm': s:sp_un, 'fg': s:fg})
 endif
-call s:h('Pmenu',         {'fg': s:fg, 'bg': s:bg})
-call s:h('PmenuSel',      {'fg': s:fg, 'bg': s:bg})
-call s:h('PmenuSbar',     {'fg': s:fg, 'bg': s:bg})
-call s:h('PmenuThumb',    {'fg': s:fg, 'bg': s:bg})
+call s:h('Pmenu',         {'fg': s:fg, 'bg': s:grey})
+call s:h('PmenuSel',      {'fg': s:bg, 'bg': s:fg})
+call s:h('PmenuSbar',     {'fg': s:fg, 'bg': s:grey})
+call s:h('PmenuThumb',    {'fg': s:fg, 'bg': s:grey})
 call s:h('TabLine',       {'fg': s:fg, 'bg': s:bg})
 call s:h('TabLineSel',    {'fg': s:fg, 'bg': s:bg, 'gui': 'bold', 'cterm': 'bold'})
 call s:h('TabLineFill',   {'fg': s:fg, 'bg': s:bg})
-call s:h('CursorColumn',  {'bg': s:bg})
-call s:h('CursorLine',    {'bg': s:bg})
-call s:h('ColorColumn',   {'bg': s:bg})
+call s:h('CursorColumn',  {'bg': s:grey})
+call s:h('CursorLine',    {'bg': s:grey})
+call s:h('ColorColumn',   {'bg': s:grey})
 
 " remainder of syntax highlighting
 call s:h('MatchParen',    {'bg': s:bg, 'fg': s:fg})
