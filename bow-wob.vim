@@ -10,15 +10,15 @@ if exists('syntax on')
     syntax reset
 endif
 
-let g:colors_name='bow'
+let g:colors_name='bow-wob'
 
 " not all terminals support italics properly.  If yours does not, opt-out.
-if ! exists('g:bow_terminal_italics')
-  let g:bow_terminal_italics = 1
+if ! exists('g:bow_wob_terminal_italics')
+  let g:bow_wob_terminal_italics = 1
 endif
 
-if ! exists('g:bow_spell_undercurl')
-  let g:bow_spell_undercurl = 1
+if ! exists('g:bow_wob_spell_undercurl')
+  let g:bow_wob_spell_undercurl = 1
 endif
 
 " Colors
@@ -37,7 +37,7 @@ else
   let s:grey = s:light_grey
 endif
 
-if g:bow_spell_undercurl == 1
+if g:bow_wob_spell_undercurl == 1
   let s:sp_un = 'undercurl'
 else
   let s:sp_un = 'underline'
@@ -46,7 +46,9 @@ endif
 " shamelessly stolen from hemisu: https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)
   " Not all terminals support italics properly. If yours does, opt-in.
-  if g:bow_terminal_italics == 0 && has_key(a:style, 'cterm') && a:style['cterm'] == 'italic'
+  if g:bow_wob_terminal_italics == 0
+        \ && has_key(a:style, 'cterm')
+        \ && a:style['cterm'] == 'italic'
     unlet a:style.cterm
   endif
   execute 'highlight' a:group
