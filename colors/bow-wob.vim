@@ -78,7 +78,7 @@ hi! link Float            Constant
 call s:h('Identifier',    {'fg': s:fg})
 hi! link Function         Identifier
 
-call s:h('Statement',     {'fg': s:fg})
+call s:h('Statement',     {'fg': s:fg, 'cterm': 'bold', 'gui': 'bold'})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
