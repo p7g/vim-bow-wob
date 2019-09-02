@@ -66,9 +66,9 @@ endfunction
 
 call s:h('Normal',        {'bg': s:bg, 'fg': s:fg})
 call s:h('Cursor',        {'bg': s:fg, 'fg': s:bg})
-call s:h("Comment",       {"fg": s:fg, "gui": "italic", "cterm": "italic"})
+call s:h('Comment',       {'fg': s:fg, 'gui': 'italic', 'cterm': 'italic'})
 
-call s:h('Constant',      {'fg': s:fg})
+call s:h('Constant',      {'fg': s:fg, 'gui': 'italic', 'cterm': 'italic'})
 hi! link String           Constant
 hi! link Character        Constant
 hi! link Number           Constant
