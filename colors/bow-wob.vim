@@ -106,8 +106,8 @@ hi! link Debug            Special
 
 call s:h('Underlined', {'fg': s:fg, 'gui': 'underline', 'cterm': 'underline'})
 call s:h('Ignore',     {'fg': s:bg})
-call s:h('Error',      {'fg': s:white, 'bg': s:bg, 'gui': 'bold', 'cterm': 'bold'})
-call s:h('Todo',       {'fg': s:white, 'bg': s:bg, 'gui': 'bold', 'cterm': 'bold'})
+call s:h('Error',      {'fg': s:fg, 'bg': s:grey, 'gui': 'bold', 'cterm': 'bold'})
+call s:h('Todo',       {'fg': s:fg, 'bg': s:grey, 'gui': 'bold', 'cterm': 'bold'})
 
 " ui chrome ====================================================================
 " ordered according to `:help hitest.vim`
